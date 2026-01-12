@@ -25,7 +25,7 @@ import {
 // --- Firebase Initialization ---
 // This configuration should be moved to a secure place in a real application
 const firebaseConfig = {
-  apiKey: "AIzaSyC6IpwCc-cG9K-EUCPrMCzMCRlFMWcc2Vs",
+  apiKey: "api_key",
   authDomain: "food-expiry-tracker-b949e.firebaseapp.com",
   projectId: "food-expiry-tracker-b949e",
   storageBucket: "food-expiry-tracker-b949e.firebasestorage.app",
@@ -244,7 +244,7 @@ export default function App() {
 
         const prompt = `Provide 3 simple recipe ideas for using up ${item.name}. For each recipe, include a creative name, a short description (1-2 sentences), and a list of key ingredients. Format the response as a JSON array of objects, where each object has keys "recipeName", "description", and "ingredients" (an array of strings).`;
         
-        const apiKey = "AIzaSyC4kUFfpxltgFLGNZiZzn7YdJ1zQBNOiOg"; // Canvas will provide the key in the runtime environment
+        const apiKey = "gemini_key"; // Canvas will provide the key in the runtime environment
         const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
 
         const payload = {
